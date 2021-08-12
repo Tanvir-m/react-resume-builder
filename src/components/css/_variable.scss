@@ -1,0 +1,53 @@
+$gray: #D1D1D1;
+$white: #E2E2E2;
+$orange: #C69B3B;
+$black: #000;
+
+
+// mixins
+@mixin shadow($value1, $value2) {
+    box-shadow: 0 $value1 + px $value2 + px rgba(0,0,0,0.16), 0 $value1 + px $value2 + px rgba(0,0,0,0.23)
+}
+
+@mixin padding($top,$rig,$bot,$left) {
+    padding: $top +px $rig +px $bot +px $left +px;
+}
+
+@mixin w-h($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin border($unit, $color) {
+    border: $unit +px solid $color;
+}
+
+@mixin image($name) {
+    background-image: url('../../../components/img/#{$name}');
+}
+
+.padNon{
+    padding: 0px;
+}
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@1&display=swap');
+
+
+.quick{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.atkin{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+.bor{
+    border-left: 5px solid $orange ;
+    padding-left: 20px;
+}
+
+p{
+    padding-top: 0px !important;
+}

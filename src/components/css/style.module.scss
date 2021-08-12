@@ -1,0 +1,28 @@
+@import "_variable.scss";
+
+// Home
+.home{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    @include shadow(6,12);
+}
+// Header
+.head{
+    background-color: $gray;
+    color: $black;
+    padding: 5% 0 5% 0;
+}
+
+// skills
+.outSkill{
+    .skill{
+        background-color: white;
+        text-align: center;
+        @include w-h(120px,120px);
+        border-radius: 50%;
+        border: 10px solid $orange;
+        h3{
+            padding-top: 20px;
+        }
+    }
+}
