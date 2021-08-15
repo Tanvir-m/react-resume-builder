@@ -63,7 +63,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://tanvir-m.github.io/react-resume-builder/)
+This section has moved here: https://tanvir-m.github.io/react-resume-builder/
 
 ### `npm run build` fails to minify
 
