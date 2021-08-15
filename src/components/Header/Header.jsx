@@ -1,21 +1,41 @@
-import {Row, Col} from 'react-bootstrap';
-import style from '../css/style.module.scss'
+import { Row, Col } from 'react-bootstrap';
+import style from '../css/style.module.scss';
+import { useContext } from 'react';
+import { SubmitContext } from '../../context/Submit';
+import { Context } from '../../context/Context';
 
 const Header = () => {
-    return (
-        <>
-            <Row className={`${style.head} mt-5`}>
-                <Col md={{span:6, offset:2}}>
-                    <h2 className={`${style.quick}`}>DEAN ANDERSON</h2>
-                    <p className={`${style.atkin}`}>CREATIVE DIRECTOR</p>
-                </Col>
-                <Col md={4}>
-                    <p className={`${style.atkin}`}>+91 9876543210</p>
-                    <p className={`${style.atkin}`}>information@gmail.com</p>
-                </Col>
-            </Row>
-        </>
-    )
-}
+  const ContextStore = useContext(Context);
+  const SubmitStore = useContext(SubmitContext);
+  return (
+    <>
+      <Row className={`${style.head} mt-5`}>
+        <Col md={{ span: 6, offset: 2 }}>
+          {SubmitStore.isSubmit && (
+            <>
+              <h1 className={`${style.quick}`}>
+                {ContextStore.personalOverview.name}
+              </h1>
+            </>
+          )}
 
-export default Header
+          {/* <p className={`${style.atkin}`}>CREATIVE DIRECTOR</p> */}
+        </Col>
+        <Col md={4}>
+          {SubmitStore.isSubmit && (
+            <>
+              <h4 className={`${style.atkin}`}>
+                +91 {ContextStore.personalOverview.number}
+              </h4>
+              <h4 className={`${style.atkin}`}>
+                {ContextStore.personalOverview.email}
+              </h4>
+            </>
+          )}
+        </Col>
+      </Row>
+    </>
+  );
+};
+
+export default Header;

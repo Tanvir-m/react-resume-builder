@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '../Header/Header';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,22 +10,36 @@ import Achivements from '../Achivements/Achivements';
 import Experience from '../Experience/Experience';
 import Skills from '../Skills/Skills';
 import Form from '../Form/Form/Form';
-import { Button } from '../css/Style';
+import SubmitContextCom from '../../context/Submit';
+import Context from '../../context/Context';
 
 const Home = () => {
+  const [display, setDisplay] = useState(true);
+
+  const toggle = () => setDisplay(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [display]);
   return (
     <>
       <Container className={style.home}>
-        <Form />
-
-        <Button>Submit</Button>
-        <Header />
-        <About />
-        <PersonalOverview />
-        <Education />
-        <Experience />
-        <Achivements />
-        <Skills />
+        <SubmitContextCom>
+          <Context>
+            {display && <Form tog={toggle} />}
+            {!display && (
+              <>
+                <Header />
+                <About />
+                <PersonalOverview />
+                <Education />
+                <Experience />
+                <Achivements />
+                <Skills />
+              </>
+            )}
+          </Context>
+        </SubmitContextCom>
       </Container>
     </>
   );

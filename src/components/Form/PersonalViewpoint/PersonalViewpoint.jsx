@@ -1,8 +1,10 @@
-import { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import propTypes from 'prop-types';
+import { useContext } from 'react';
+import { Context } from '../../../context/Context';
 
 const PersonalViewpoint = (props) => {
+  const ContextStore = useContext(Context);
+
   return (
     <>
       <Row className="pt-5">
@@ -12,15 +14,14 @@ const PersonalViewpoint = (props) => {
             className="form-control"
             rows="5"
             placeholder="About You"
+            value={ContextStore.about.about}
+            onChange={(e) => ContextStore.about.setAbout(e.target.value)}
           ></textarea>
+          {/* <button onClick={aboutClickHandler}>Add about data</button> */}
         </Col>
       </Row>
     </>
   );
-};
-
-PersonalViewpoint.propTypes = {
-  sendAboutData: propTypes.func,
 };
 
 export default PersonalViewpoint;
