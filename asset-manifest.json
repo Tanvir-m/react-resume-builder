@@ -1,23 +1,32 @@
 {
   "files": {
-    "main.css": "/react-resume-builder/static/css/main.c3460a23.chunk.css",
-    "main.js": "/react-resume-builder/static/js/main.8d021c23.chunk.js",
-    "main.js.map": "/react-resume-builder/static/js/main.8d021c23.chunk.js.map",
-    "runtime-main.js": "/react-resume-builder/static/js/runtime-main.70969fd4.js",
-    "runtime-main.js.map": "/react-resume-builder/static/js/runtime-main.70969fd4.js.map",
-    "static/css/2.9082872e.chunk.css": "/react-resume-builder/static/css/2.9082872e.chunk.css",
-    "static/js/2.a6f9af26.chunk.js": "/react-resume-builder/static/js/2.a6f9af26.chunk.js",
-    "static/js/2.a6f9af26.chunk.js.map": "/react-resume-builder/static/js/2.a6f9af26.chunk.js.map",
+    "main.css": "/react-resume-builder/static/css/main.86da185f.chunk.css",
+    "main.js": "/react-resume-builder/static/js/main.8304ced2.chunk.js",
+    "main.js.map": "/react-resume-builder/static/js/main.8304ced2.chunk.js.map",
+    "runtime-main.js": "/react-resume-builder/static/js/runtime-main.f06a4f7a.js",
+    "runtime-main.js.map": "/react-resume-builder/static/js/runtime-main.f06a4f7a.js.map",
+    "static/js/2.b87cbc51.chunk.js": "/react-resume-builder/static/js/2.b87cbc51.chunk.js",
+    "static/js/2.b87cbc51.chunk.js.map": "/react-resume-builder/static/js/2.b87cbc51.chunk.js.map",
+    "static/css/3.9082872e.chunk.css": "/react-resume-builder/static/css/3.9082872e.chunk.css",
+    "static/js/3.c6a581ad.chunk.js": "/react-resume-builder/static/js/3.c6a581ad.chunk.js",
+    "static/js/3.c6a581ad.chunk.js.map": "/react-resume-builder/static/js/3.c6a581ad.chunk.js.map",
+    "static/js/4.3f5e2d63.chunk.js": "/react-resume-builder/static/js/4.3f5e2d63.chunk.js",
+    "static/js/4.3f5e2d63.chunk.js.map": "/react-resume-builder/static/js/4.3f5e2d63.chunk.js.map",
+    "static/js/5.f1ff73b2.chunk.js": "/react-resume-builder/static/js/5.f1ff73b2.chunk.js",
+    "static/js/5.f1ff73b2.chunk.js.map": "/react-resume-builder/static/js/5.f1ff73b2.chunk.js.map",
     "index.html": "/react-resume-builder/index.html",
-    "static/css/2.9082872e.chunk.css.map": "/react-resume-builder/static/css/2.9082872e.chunk.css.map",
-    "static/css/main.c3460a23.chunk.css.map": "/react-resume-builder/static/css/main.c3460a23.chunk.css.map",
-    "static/js/2.a6f9af26.chunk.js.LICENSE.txt": "/react-resume-builder/static/js/2.a6f9af26.chunk.js.LICENSE.txt"
+    "static/css/3.9082872e.chunk.css.map": "/react-resume-builder/static/css/3.9082872e.chunk.css.map",
+    "static/css/main.86da185f.chunk.css.map": "/react-resume-builder/static/css/main.86da185f.chunk.css.map",
+    "static/js/2.b87cbc51.chunk.js.LICENSE.txt": "/react-resume-builder/static/js/2.b87cbc51.chunk.js.LICENSE.txt",
+    "static/js/3.c6a581ad.chunk.js.LICENSE.txt": "/react-resume-builder/static/js/3.c6a581ad.chunk.js.LICENSE.txt",
+    "static/js/4.3f5e2d63.chunk.js.LICENSE.txt": "/react-resume-builder/static/js/4.3f5e2d63.chunk.js.LICENSE.txt",
+    "static/js/5.f1ff73b2.chunk.js.LICENSE.txt": "/react-resume-builder/static/js/5.f1ff73b2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.70969fd4.js",
-    "static/css/2.9082872e.chunk.css",
-    "static/js/2.a6f9af26.chunk.js",
-    "static/css/main.c3460a23.chunk.css",
-    "static/js/main.8d021c23.chunk.js"
+    "static/js/runtime-main.f06a4f7a.js",
+    "static/css/3.9082872e.chunk.css",
+    "static/js/3.c6a581ad.chunk.js",
+    "static/css/main.86da185f.chunk.css",
+    "static/js/main.8304ced2.chunk.js"
   ]
 }
